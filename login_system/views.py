@@ -1,3 +1,4 @@
+from re import M
 from django.http.response import HttpResponse
 from django.shortcuts import redirect, render
 from django.contrib import messages
@@ -51,7 +52,10 @@ def user_logout(request):
     if request.user.is_authenticated:
         logout(request)
     return redirect(user_login)
-
+def lohout(request):
+    m =1
+    m +=2
+    print(M)
 
 
 def user_signup(request):
