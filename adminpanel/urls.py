@@ -11,6 +11,7 @@ urlpatterns = [
     path('user_update',views.user_update),
     path('user_add',views.user_add),
     path('admin_logout',views.admin_logout),
-    path('searched',views.searched,name='searched'),
+    path('searched',views.searched, name="searched")
+    
 
 ]

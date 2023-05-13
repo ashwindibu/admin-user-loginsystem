@@ -64,7 +64,7 @@ def user_signup(request):
         if form.is_valid():
             form.save()
             return redirect(user_login)
-
+ 
     form = RegisterationForm()
     context = {
         'form':form
